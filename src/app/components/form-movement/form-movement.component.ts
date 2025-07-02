@@ -20,15 +20,15 @@ export class FormMovementComponent {
 
   deposit(): void {
     this.BankAccountService.deposit(this.amount).subscribe({
-      next: () => this.message = '✅ Dépôt effectué !',
-      error: () => this.message = '❌ Erreur lors du dépôt.'
+      next: () => this.message = '✅ Deposit Done !',
+      error: () => this.message = '❌ Deposit Error.'
     });
   }
 
   withdraw(): void {
     this.BankAccountService.withdraw(this.amount).subscribe({
-      next: () => this.message = '✅ Retrait effectué !',
-      error: () => this.message = '❌ Solde insuffisant ou erreur.'
+      next: () => this.message = '✅ Withdrawal Made !',
+      error: () => this.message = '❌ Insufficient balance or error.'
     });
   }
 }
