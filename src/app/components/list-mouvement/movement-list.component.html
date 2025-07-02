@@ -1,0 +1,24 @@
+
+
+
+<h2>Relevé de compte</h2>
+<p>💰 Solde actuel : <strong>{{ balance }} €</strong></p>
+
+<table border="1">
+  <thead>
+  <tr>
+    <th>Date</th>
+    <th>Type</th>
+    <th>Montant</th>
+    <th>Solde après</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let tx of transactions">
+    <td>{{ tx.date }}</td>
+    <td>{{ tx.type }}</td>
+    <td>{{ tx.amount }}</td>
+    <td>{{ tx.balanceAfter }}</td>
+  </tr>
+  </tbody>
+</table>

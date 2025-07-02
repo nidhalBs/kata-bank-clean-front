@@ -1,0 +1,11 @@
+<h1>🏦 Kata Bank</h1>
+<nav style="display: flex; gap: 2rem;">
+  <div (click)="goTo('/form')" style="cursor: pointer;">
+    💸 <strong>Mouvement</strong>
+  </div>
+  <div (click)="goTo('/list')" style="cursor: pointer;">
+    📄 <strong>Relevé</strong>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
